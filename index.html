@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chiru - Devloper Portfoilio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        background-color: rgb(8, 8, 52);
+        color: antiquewhite;
+        font-family: "Poppins", sans-serif;
+      }
+      nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 60px;
+        background-color: rgb(32, 32, 114);
+      }
+      nav ul {
+        display: flex;
+        justify-content: center;
+      }
+      nav ul li {
+        list-style: none;
+        margin: 0 23px;
+      }
+      nav ul li a {
+        text-decoration: none;
+        color: aliceblue;
+      }
+      nav ul li a:hover {
+        color: rgb(67, 158, 237);
+        font-size: 1.02rem;
+      }
+      main hr {
+        border: 0;
+        background: rgb(190, 135, 242);
+        height: 1.5px;
+        margin: 60px 84px;
+      }
+      main {
+        min-height: 100vh; /* Set a minimum height of 100% of the viewport height */
+        padding-bottom: 80px; /* Add padding to the bottom of the main section */
+      }
+
+      .left {
+        font-size: 1.5rem;
+      }
+      .firstsection {
+        display: flex;
+        justify-content: space-around;
+        margin: 140px 0;
+      }
+      .firstsection > div {
+        width: 30%;
+      }
+      .leftsection {
+        font-size: 3rem;
+      }
+      .leftsection .btn{
+        padding: 12px;
+        color: white;
+        background: #1e2167;
+        border: 2px solid white;
+        border-radius: 6px;
+        font-size: 20px;
+        cursor: pointer;
+      }
+      .leftsection .buttons{
+        padding: 50px 0;
+
+      }
+      .rightsection img {
+        width: 80%;
+      }
+      .purple {
+        color: rgb(190, 135, 242);
+      }
+      .text-gray {
+        color: gray;
+      }
+      #element {
+        color: rgb(190, 135, 242);
+      }
+      .image-top {
+        width: 23px;
+        position: relative;
+        top: -22px;
+        left: -11px;
+      }
+      .SecondSection {
+        max-width: 80vw;
+        margin: auto;
+      }
+      .SecondSection h1 {
+        font-size: 1.9rem;
+      }
+      .SecondSection .box {
+        background: white;
+        width: 80vw;
+        height: 2px;
+        margin: 56px 0;
+        display: flex;
+      }
+      .SecondSection .vertical {
+        height: 93px;
+        width: 1px;
+        background-color: rgb(255, 255, 255);
+        margin: 0 100px;
+      }
+      .vertical-title {
+        position: relative;
+        top: 75px;
+        width: 150px;
+      }
+      .vertical-desc {
+        position: relative;
+        top: 86px;
+        color: gray;
+        width: 150px;
+        font-size: 9px;
+      }
+
+
+      footer {
+        background-color: rgb(190, 135, 242);
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        width: 100%;
+        position: relative;
+        bottom: 0;
+      }
+
+
+      /* Media Queries for Mobile Devices */
+@media only screen and (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav ul {
+    margin-top: 10px;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  .firstsection {
+    margin: 80px 0;
+  }
+
+  .leftsection {
+    font-size: 1.5rem;
+  }
+
+  .leftsection .btn {
+    font-size: 14px;
+  }
+
+  .rightsection img {
+    width: 100%;
+  }
+
+  .SecondSection .box {
+    margin: 20px 0;
+  }
+
+  .SecondSection .vertical {
+    margin-bottom: 10px;
+  }
+
+  .SecondSection .vertical-title,
+  .vertical-desc {
+    width: 100%;
+    text-align: center;
+  }
+}
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left">Chiru's Portfolio</div>
+        <div class="right">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/">About</a></li>
+            <li><a href="/">Services</a></li>
+            <li><a href="/">Project</a></li>
+            <li><a href="/">Contact me</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="firstsection">
+        <div class="leftsection">
+          Hi, My name is <span class="purple">Chiru</span>
+          <div>and iam a passionate</div>
+          <span id="element"></span>
+          <div class="buttons">
+            <button class="btn">Downlaod Resume
+            </button>
+            <button class="btn">Visit Github</button>
+          </div>
+        </div>
+        <div class="rightsection"><img src="bg.png" alt="" /></div>
+      </section>
+      <hr />
+      <section class="SecondSection">
+        <span class="text-gray">What i have done so far</span>
+        <h1>Projects</h1>
+        <div class="box">
+          <div class="vertical">
+            <img class="image-top" src="path.png" alt="" />
+            <div class="vertical-title">Qtrip Static</div>
+            <div class="vertical-desc">
+              QTrip is a travel website aimed at travellers looking for a
+              multitude of adventures in different cities. Its a static website.
+            </div>
+          </div>
+          <div class="vertical">
+            <img class="image-top" src="path.png" alt="" />
+            <div class="vertical-title">Qtrip Dynamic</div>
+            <div class="vertical-desc">
+              QTrip is a travel website aimed at travellers looking for a
+              multitude of adventures in different cities. Its a dynamic
+              website.
+            </div>
+          </div>
+          <div class="vertical">
+            <img class="image-top" src="path.png" alt="" />
+            <div class="vertical-title">Xboard</div>
+            <div class="vertical-desc">
+              XBoard is a News Feed website that will feature the latest news
+              for select topics, from Flipboard.
+            </div>
+          </div>
+          <div class="vertical">
+            <img class="image-top" src="path.png" alt="" />
+            <div class="vertical-title">Qkart</div>
+            <div class="vertical-desc">
+              QKart is an e-commerce application offering a variety of products for customers to choose from.
+            </div>
+          </div>
+          <div class="vertical">
+            <img class="image-top" src="path.png" alt="" />
+            <div class="vertical-title">Qtify</div>
+            <div class="vertical-desc">
+              Qtify is Media streaming Website.
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div>
+        <p>&copy; 2024 Chiru's Portfolio</p>
+        <p>Email: chiranjeevimaktha@gmail.com</p>
+      </div>
+      <div></div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["Web Developer"],
+        typeSpeed: 50,
+      });
+    </script>
+  </body>
+</html>
